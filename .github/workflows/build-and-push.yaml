@@ -34,7 +34,7 @@ jobs:
           # The tag of the image, including the repository and image name
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-server:latest
           # Platforms to build the image for
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,darwin/amd64,darwin/arm64,linux/arm32/v7,linux/arm32/v6,linux/arm32/v5
           # Cache the image layers
           cache-from: type=gha
           cache-to: type=gha,mode=max
