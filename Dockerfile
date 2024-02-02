@@ -1,4 +1,4 @@
-FROM golang:bullseye
+FROM golang:alpine
 WORKDIR /go/src/app
 COPY main.go main.go
 EXPOSE 80
